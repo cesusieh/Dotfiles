@@ -18,11 +18,11 @@ return {
 					"lua_ls", -- Lua
 				},
 
-				automatic_installation = true,
-
 				handlers = {
 					function(server_name)
-						require("lspconfig")[server_name].setup({})
+						require("lspconfig")[server_name].setup({
+							capabilities = capabilities,
+						})
 					end,
 				},
 			})
@@ -47,12 +47,11 @@ return {
 			})
 
 			vim.api.nvim_create_autocmd("InsertLeave", {
-				pattern = { "*.lua", "*.py", "*.go" }, -- Ajuste conforme necessário
+				pattern = { "*.lua", "*.py", "*.go" },
 				callback = function()
 					vim.lsp.buf.format({
 						async = false,
 						filter = function(client)
-							-- Filtra os clientes de LSP, garantindo que apenas `null-ls` formate
 							return client.name == "null-ls"
 						end,
 					})
