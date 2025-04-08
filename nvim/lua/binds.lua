@@ -24,7 +24,7 @@ vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent
 vim.keymap.set("n", "<leader>ee", ":NvimTreeFocus<CR>", { noremap = true, silent = true })
 
 -- Format buffer
-vim.keymap.set("n", "<leader>f", function()
+vim.keymap.set("n", "<C-f>", function()
 	require("conform").format({ async = true })
 	require("lint").try_lint()
 end, { desc = "Format buffer" })
