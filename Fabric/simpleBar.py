@@ -9,7 +9,7 @@ class StatusBar(Window):
     def __init__(self):
         super().__init__(layer="top", anchor="top left bottom", exclusivity="auto")
 
-        self.workArea = Workspaces()
+        self.workArea = Workspaces(orientation="vertical")
         self.date_time = DateTime(formatters=["%H\n%M"])
         self.children = CenterBox(
             orientation="vertical",
@@ -20,4 +20,5 @@ class StatusBar(Window):
 
 if __name__ == "__main__":
     app = Application("bar-example", StatusBar())
+    app.set_stylesheet_from_file("./style.css")
     app.run()
