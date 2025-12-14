@@ -22,16 +22,7 @@
 
     unzip
   ];
-
-  programs.kitty = {
-    enable = true;
-    themeFile = "Catppuccin-Mocha"; 
-    settings = {
-       window_padding_width = 10;
-       font_family = "Fira Code";
-    };
-  };
-
+  
   home.stateVersion = "25.11"; 
   programs.home-manager.enable = true;
 }
