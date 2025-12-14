@@ -4,17 +4,24 @@
   programs.git = {
     enable = true;
 
-    userName = "cesusieh";
-    userEmail = "cesux3@gmail.com";
-    
-    extraConfig = {
+    settings = {
+      user = {
+        name = "cesusieh"; 
+        email = "cesux3@gmail.com";
+      };
+
       init.defaultBranch = "main";
       url."git@github.com:".insteadOf = "https://github.com/";
     };
   };
 
-  programs.ssh = {
+programs.ssh = {
     enable = true;
-    addKeysToAgent = "yes";
+    
+    matchBlocks = {
+      "*" = {
+        addKeysToAgent = "yes";
+      };
+    };
   };
 }

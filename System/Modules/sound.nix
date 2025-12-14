@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  hardware.pulseaudio.enable = false;
+  service.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
