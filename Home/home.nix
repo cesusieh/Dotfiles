@@ -13,6 +13,9 @@
     btop      
     eza
 
+    pamixer
+    pavucontrol
+
     google-chrome
     vscode
   ];
