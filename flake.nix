@@ -17,6 +17,7 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
+            home-manager.backupFileExtension = "bckp";
             home-manager.users.carlinhos = import ./Home/home.nix;
             # home-manager.extraSpecialArgs = { inherit inputs; };
           }
