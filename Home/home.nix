@@ -12,12 +12,15 @@
     fastfetch 
     btop      
     eza
+    bat
 
     pamixer
     pavucontrol
 
     google-chrome
     vscode
+
+    unzip
   ];
 
   programs.kitty = {
