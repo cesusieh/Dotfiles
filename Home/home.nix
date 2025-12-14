@@ -16,6 +16,7 @@
 
     pamixer
     pavucontrol
+    polkit_gnome 
 
     google-chrome
     vscode
