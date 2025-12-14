@@ -2,7 +2,7 @@
 
 {
   imports = [
-    Modules/git.nix
+    ./Modules
   ];
 
   home.username = "carlinhos";
