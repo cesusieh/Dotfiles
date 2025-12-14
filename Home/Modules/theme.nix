@@ -5,7 +5,18 @@
     adw-gtk3 
     papirus-icon-theme 
     bibata-cursors 
+    dconf
   ];
+
+  dconf.settings = {
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      
+      gtk-theme = "adw-gtk3-dark";
+      icon-theme = "Papirus-Dark";
+      cursor-theme = "Bibata-Modern-Classic";
+    };
+  };
 
   gtk = {
     enable = true;
@@ -21,7 +32,7 @@
     };
 
     cursorTheme = {
-      name = "Bibata-Modern-Ice";
+      name = "Bibata-Modern-Classic";
       package = pkgs.bibata-cursors;
       size = 24;
     };
@@ -39,7 +50,7 @@
     gtk.enable = true;
     x11.enable = true;
     package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Ice";
+    name = "Bibata-Modern-Classic";
     size = 24;
   };
   
