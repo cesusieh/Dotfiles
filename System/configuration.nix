@@ -4,6 +4,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
+      Modules/sound.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
