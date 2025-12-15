@@ -3,9 +3,9 @@
 {
   home.packages = with pkgs; [
     adw-gtk3 
-    papirus-icon-theme 
     bibata-cursors 
     dconf
+    adwaita-icon-theme 
   ];
 
   dconf.settings = {
@@ -13,7 +13,7 @@
       color-scheme = "prefer-dark";
       
       gtk-theme = "adw-gtk3-dark";
-      icon-theme = "Papirus-Dark";
+      icon-theme = "Adwaita"; 
       cursor-theme = "Bibata-Modern-Classic";
     };
   };
@@ -27,8 +27,8 @@
     };
 
     iconTheme = {
-      name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
+      name = "Adwaita";
+      package = pkgs.adwaita-icon-theme;
     };
 
     cursorTheme = {

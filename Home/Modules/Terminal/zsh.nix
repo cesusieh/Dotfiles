@@ -9,8 +9,8 @@
     syntaxHighlighting.enable = false;
 
     shellAliases = {
-      ls = "eza";
-      tree = "eza --tree";
+      ls = "eza --icons";
+      tree = "eza --tree --icons";
       cat = "bat";
 
       nix-update = "sudo nixos-rebuild switch --flake ~/Dotfiles/#Robson";
