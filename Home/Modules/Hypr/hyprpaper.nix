@@ -1,17 +1,19 @@
 { pkgs, ... }
 
 {
-  services.hyprpaper.settings = {
+  services.hyprpaper = {
     enable = true;
 
-    ipc = "on";
-    splash = false;
-    splash_offset = 2.0;
+    settings = {
+      ipc = "on";
+      splash = false;
+      splash_offset = 2.0;
 
-    preload = [ "~/Imagens/Wallpapers/anime-style-character-space.jpg" ];
-    wallpaper = [
-      "DP-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
-      "HDMI-A-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
-    ];
+      preload = [ "~/Imagens/Wallpapers/anime-style-character-space.jpg" ];
+      wallpaper = [
+        "DP-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
+        "HDMI-A-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
+      ];
+    };
   };
 }
