@@ -3,7 +3,7 @@
 let
   accent = "rgb(3584e4)";
   text = "rgb(ffffff)";
-  wall = "/var/home/carlinhos/Imagens/Wallpapers/blossom.jpeg";
+  wall = "~/Imagens/Wallpapers/blossom.jpeg";
 in
 {
   programs.hyprlock = {
