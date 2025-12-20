@@ -13,5 +13,5 @@
       "DP-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
       "HDMI-A-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
     ];
-  }
+  };
 }
