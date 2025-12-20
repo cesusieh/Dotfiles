@@ -1,11 +1,11 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 
 {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
 
-    autosuggestion.enable = true; 
+    autosuggestion.enable = true;
     syntaxHighlighting.enable = false;
 
     shellAliases = {
@@ -14,7 +14,7 @@
       cat = "bat";
 
       nix-update = "sudo nixos-rebuild switch --flake ~/Dotfiles/#Robson";
-      nix-dots = "code ~/Dotfiles"; 
+      nix-dots = "code ~/Dotfiles";
     };
 
     oh-my-zsh = {

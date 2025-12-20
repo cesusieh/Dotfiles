@@ -1,9 +1,9 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs.starship = {
     enable = true;
-    
+
     settings = {
       format = "$directory $container $python $git_branch $git_status$line_break$character";
 

@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   # --- Pacotes Essenciais do Hyprland ---
@@ -6,20 +6,20 @@
     hyprland
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
-    
+
     # Utilitários usados nos seus keybinds
-    wofi            # Menut
-    nautilus        # Arquivos
-    hyprshot        # Screenshots
-    satty           # Editor de Screenshots
-    brightnessctl   # Brilho
-    playerctl       # Mídia
+    wofi # Menut
+    nautilus # Arquivos
+    hyprshot # Screenshots
+    satty # Editor de Screenshots
+    brightnessctl # Brilho
+    playerctl # Mídia
   ];
 
   # --- A Configuração do Hyprland (Módulo Wayland) ---
   wayland.windowManager.hyprland = {
     enable = true;
-    
+
     # Ativa integração com Systemd e XWayland (padrão, mas bom garantir)
     systemd.enable = true;
     xwayland.enable = true;
@@ -45,7 +45,7 @@
         "GDK_BACKEND,wayland,x11,*"
         "GTK_USE_PORTAL,1"
         "HYPRSHOT_DIR,/home/carlinhos/Imagens/Screenshots"
-        
+
         "QT_QPA_PLATFORMTHEME,gtk3"
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
         "QT_AUTO_SCREEN_SCALE_FACTOR,1"
@@ -112,7 +112,7 @@
         disable_hyprland_logo = false;
       };
 
-      input = { 
+      input = {
         kb_layout = "br";
       };
 

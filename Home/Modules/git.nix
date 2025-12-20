@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs.git = {
@@ -6,7 +6,7 @@
 
     settings = {
       user = {
-        name = "cesusieh"; 
+        name = "cesusieh";
         email = "cesux3@gmail.com";
       };
 
@@ -17,7 +17,7 @@
 
   programs.ssh = {
     enable = true;
-    enableDefaultConfig = false; 
+    enableDefaultConfig = false;
 
     matchBlocks = {
       "*" = {

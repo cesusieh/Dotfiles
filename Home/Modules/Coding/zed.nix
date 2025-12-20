@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 
 {
   programs.zed-editor = {
@@ -18,7 +18,7 @@
       "buffer_font_family" = "JetBrainsMono Nerd Font";
       "buffer_font_size" = 16.0;
 
-      "icon_theme"= "Bearded Icon Theme";
+      "icon_theme" = "Bearded Icon Theme";
       "theme" = {
         "mode" = "dark";
         "light" = "One Light";

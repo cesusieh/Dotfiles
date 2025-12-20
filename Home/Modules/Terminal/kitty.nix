@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ ... }:
 
 {
   programs.kitty = {
@@ -23,7 +23,7 @@
 
       copy_on_select = "no";
       enable_audio_bell = "no";
-      
+
       cursor_blink_interval = "0.5";
       cursor_shape = "underline";
       cursor_shape_unfocused = "unchanged";
@@ -40,7 +40,7 @@
       cursor = "#ffffff";
       cursor_text_color = "#000000";
 
-      # Black 
+      # Black
       color0 = "#1e1e1e";
       color8 = "#5e5c64";
 
@@ -56,7 +56,7 @@
       color3 = "#e5a50a";
       color11 = "#f9f06b";
 
-      # Blue 
+      # Blue
       color4 = "#3584e4";
       color12 = "#62a0ea";
 
