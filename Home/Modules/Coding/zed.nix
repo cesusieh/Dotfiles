@@ -15,18 +15,22 @@
     ];
 
     userSettings = {
-      "buffer_font_family"= "JetBrainsMono Nerd Font";
-      "buffer_font_size"= 16.0;
+      "buffer_font_family" = "JetBrainsMono Nerd Font";
+      "buffer_font_size" = 16.0;
 
       "icon_theme"= "Bearded Icon Theme";
-      "theme"= {
-        "mode"= "dark";
-        "light"= "One Light";
-        "dark"= "Oxocarbon Dark (IBM Carbon)";
+      "theme" = {
+        "mode" = "dark";
+        "light" = "One Light";
+        "dark" = "Oxocarbon Dark (IBM Carbon)";
       };
 
-      "disable_ai"= true;
-    };
+      "terminal" = {
+        "blinking" = "on";
+        "cursor_shape" = "bar";
+      };
 
+      "disable_ai" = true;
+    };
   };
 }
