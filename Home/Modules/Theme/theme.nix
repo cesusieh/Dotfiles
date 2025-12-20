@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    adw-gtk3
+    nightfox-gtk-theme
     bibata-cursors
     dconf
     adwaita-icon-theme
@@ -11,8 +11,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-
-      gtk-theme = "adw-gtk3-dark";
+      gtk-theme = "Carbonfox-Dark";
       icon-theme = "Adwaita";
       cursor-theme = "Bibata-Modern-Classic";
     };
@@ -22,8 +21,8 @@
     enable = true;
 
     theme = {
-      name = "adw-gtk3-dark";
-      package = pkgs.adw-gtk3;
+      name = "Carbonfox-Dark";
+      package = pkgs.nightfox-gtk-theme;
     };
 
     iconTheme = {
