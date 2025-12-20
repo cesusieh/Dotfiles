@@ -19,7 +19,7 @@
     polkit_gnome 
 
     google-chrome
-    vscode
+    zed
 
     unzip
   ];
