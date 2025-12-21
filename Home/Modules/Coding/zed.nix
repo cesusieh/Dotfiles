@@ -12,6 +12,7 @@
       "Python Snippets"
       "Dockerfile"
       "Prisma"
+      "SCSS"
     ];
 
     userSettings = {
