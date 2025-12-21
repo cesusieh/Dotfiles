@@ -1,26 +1,21 @@
 { pkgs, ... }:
 
 {
-  # --- Pacotes Essenciais do Hyprland ---
   home.packages = with pkgs; [
     hyprland
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
 
-    # Utilitários usados nos seus keybinds
-    wofi # Menut
-    nautilus # Arquivos
-    hyprshot # Screenshots
-    satty # Editor de Screenshots
-    brightnessctl # Brilho
-    playerctl # Mídia
+    wofi
+    nautilus
+    hyprshot
+    satty
+    brightnessctl
+    playerctl
   ];
 
-  # --- A Configuração do Hyprland (Módulo Wayland) ---
   wayland.windowManager.hyprland = {
     enable = true;
-
-    # Ativa integração com Systemd e XWayland (padrão, mas bom garantir)
     systemd.enable = true;
     xwayland.enable = true;
 
@@ -55,8 +50,8 @@
         gaps_in = 4;
         gaps_out = 8;
         border_size = 2;
-        "col.active_border" = "rgba(7aa2f7ee) rgba(bb9af7ee) 45deg";
-        "col.inactive_border" = "rgba(414868aa)";
+        "col.active_border" = "rgb(be95ff) rgb(33b1ff) 45deg";
+        "col.inactive_border" = "rgb(262626)";
         resize_on_border = false;
         allow_tearing = false;
         layout = "dwindle";
@@ -71,7 +66,7 @@
           enabled = true;
           range = 4;
           render_power = 3;
-          color = "rgba(1a1a1aee)";
+          color = "rgba(161616ee)";
         };
 
         blur = {
@@ -110,6 +105,7 @@
       misc = {
         force_default_wallpaper = -1;
         disable_hyprland_logo = false;
+        background_color = "rgb(161616)";
       };
 
       input = {

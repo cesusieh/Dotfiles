@@ -1,8 +1,11 @@
 { ... }:
 
 let
-  accent = "rgb(3584e4)";
-  text = "rgb(ffffff)";
+  accent = "rgb(be95ff)";
+  text = "rgb(f2f4f8)";
+  background_input = "rgba(22, 22, 22, 0.8)";
+  error_color = "rgb(ee5396)";
+
   wall = "~/Imagens/Wallpapers/blossom.jpeg";
 in
 {
@@ -27,6 +30,7 @@ in
           brightness = 0.8172;
           vibrancy = 0.1696;
           vibrancy_darkness = 0.0;
+          color = "rgb(161616)";
         }
       ];
 
@@ -77,14 +81,14 @@ in
           dots_rounding = -1;
 
           outer_color = "rgba(0, 0, 0, 0)";
-          inner_color = "rgba(48, 48, 48, 0.7)";
+          inner_color = background_input;
           font_color = text;
           fade_on_empty = true;
 
           placeholder_text = "<i>Senha...</i>";
           rounding = 12;
           check_color = accent;
-          fail_color = "rgb(f38ba8)";
+          fail_color = error_color;
 
           position = "0, -180";
           halign = "center";
