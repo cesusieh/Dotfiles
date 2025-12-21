@@ -10,7 +10,7 @@
       hostname = {
         ssh_only = false;
         format = "[$hostname]($style)";
-        style = "bold blue";
+        style = "bold #33b1ff";
       };
 
       directory = {
@@ -18,43 +18,43 @@
         truncation_length = 3;
         truncate_to_repo = false;
         format = "[$path]($style) ";
-        style = "bold blue";
+        style = "bold #be95ff";
       };
 
       container = {
         format = "[ $name]($style)";
-        style = "bold purple";
+        style = "bold #3ddbd9";
       };
 
       python = {
         format = "[$symbol$virtualenv]($style) ";
         symbol = "󰌠 ";
-        style = "bold yellow";
+        style = "bold #e8a27e";
         detect_extensions = [ "py" ];
       };
 
       git_branch = {
         format = " [$branch]($style) ";
-        style = "bold green";
+        style = "bold #25be6a";
       };
 
       git_status = {
         ahead = "⇡$count";
         behind = "⇣$count";
         diverged = "⇕";
-        staged = "[+$count](bold green)";
-        stashed = "[↵](dimmed white)";
-        modified = "[!$count](bold yellow)";
-        untracked = "[?](dimmed red)";
-        renamed = "[»](dimmed white)";
-        deleted = "[✘](bold red)";
-        style = "bold yellow";
+        staged = "[+$count](bold #25be6a)";
+        stashed = "[↵](#525252)";
+        modified = "[!$count](bold #e8a27e)";
+        untracked = "[?](#ee5396)";
+        renamed = "[»](#3ddbd9)";
+        deleted = "[✘](bold #ee5396)";
+        style = "bold #e8a27e";
         format = "[$all_status$ahead_behind]($style)";
       };
 
       character = {
-        success_symbol = "[~](bold magenta)";
-        error_symbol = "[~](bold red)";
+        success_symbol = "[~](bold #be95ff)";
+        error_symbol = "[~](bold #ee5396)";
       };
     };
   };
