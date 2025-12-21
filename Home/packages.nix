@@ -1,7 +1,10 @@
-{ pkgs, ... }:
+{ inputs, pkgs, ... }:
 
 {
   home.packages = with pkgs; [
+    # AGS
+    inputs.my-shell.packages.${pkgs.system}.default
+
     # GUI programs
     google-chrome
     nautilus
