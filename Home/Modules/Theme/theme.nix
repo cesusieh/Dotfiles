@@ -1,8 +1,14 @@
 { pkgs, ... }:
 
+let
+  carbonfoxPkg = pkgs.nightfox-gtk-theme.override {
+    colorVariants = [ "dark" ];
+    tweakVariants = [ "carbonfox" ];
+  };
+in
 {
   home.packages = with pkgs; [
-    nightfox-gtk-theme
+    carbonfoxPkg
     bibata-cursors
     dconf
     adwaita-icon-theme
@@ -11,7 +17,7 @@
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
-      gtk-theme = "Carbonfox-Dark";
+      gtk-theme = "Nightfox-Dark-Carbonfox";
       icon-theme = "Adwaita";
       cursor-theme = "Bibata-Modern-Classic";
     };
@@ -21,8 +27,8 @@
     enable = true;
 
     theme = {
-      name = "Carbonfox-Dark";
-      package = pkgs.nightfox-gtk-theme;
+      name = "Nightfox-Dark-Carbonfox";
+      package = carbonfoxPkg;
     };
 
     iconTheme = {
