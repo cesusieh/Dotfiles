@@ -5,13 +5,6 @@
     hyprland
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
-
-    wofi
-    nautilus
-    hyprshot
-    satty
-    brightnessctl
-    playerctl
   ];
 
   wayland.windowManager.hyprland = {
@@ -28,7 +21,7 @@
       exec-once = [
         "hyprpaper"
         "hypridle"
-        "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
+        "systemctl --user start hyprpolkitagent"
       ];
 
       env = [

@@ -9,4 +9,6 @@
       "nofail"
     ];
   };
+
+  services.gvfs.enable = true;
 }
