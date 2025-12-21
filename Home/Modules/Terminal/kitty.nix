@@ -15,9 +15,12 @@
       bold_italic_font = "auto";
       disable_ligatures = "never";
 
-      background = "#000000";
+      background = "#161616";
+      foreground = "#f2f4f8";
+
       background_opacity = "0.8";
       background_blur = 1;
+
       window_padding_width = 10;
       placement_strategy = "center";
 
@@ -33,43 +36,42 @@
       cursor_trail_start_threshold = 0;
       shell_integration = "no-cursor";
 
-      foreground = "#dedede";
-      selection_background = "#3584e4";
-      selection_foreground = "#ffffff";
-      url_color = "#3584e4";
-      cursor = "#ffffff";
-      cursor_text_color = "#000000";
+      selection_background = "#393939";
+      selection_foreground = "#f2f4f8";
+      url_color = "#33b1ff";
+      cursor = "#be95ff";
+      cursor_text_color = "#161616";
 
       # Black
-      color0 = "#1e1e1e";
-      color8 = "#5e5c64";
+      color0 = "#161616";
+      color8 = "#525252";
 
       # Red
-      color1 = "#c01c28";
-      color9 = "#f66151";
+      color1 = "#ee5396";
+      color9 = "#ee5396";
 
       # Green
-      color2 = "#2ec27e";
-      color10 = "#33d17a";
+      color2 = "#25be6a";
+      color10 = "#25be6a";
 
-      # Yellow
-      color3 = "#e5a50a";
-      color11 = "#f9f06b";
+      # Yellow (Oxocarbon usa tons mais terrosos/laranjas para amarelo)
+      color3 = "#e8a27e";
+      color11 = "#e8a27e";
 
       # Blue
-      color4 = "#3584e4";
-      color12 = "#62a0ea";
+      color4 = "#33b1ff";
+      color12 = "#33b1ff";
 
       # Magenta
-      color5 = "#c061cb";
-      color13 = "#dc8add";
+      color5 = "#be95ff";
+      color13 = "#be95ff";
 
       # Cyan
-      color6 = "#2aa1b3";
-      color14 = "#99c1f1";
+      color6 = "#3ddbd9";
+      color14 = "#3ddbd9";
 
       # White
-      color7 = "#dedede";
+      color7 = "#f2f4f8";
       color15 = "#ffffff";
     };
   };
