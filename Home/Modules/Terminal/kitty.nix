@@ -18,7 +18,7 @@
       background = "#161616";
       foreground = "#f2f4f8";
 
-      background_opacity = "0.8";
+      background_opacity = 1;
       background_blur = 1;
 
       window_padding_width = 10;
@@ -36,15 +36,23 @@
       cursor_trail_start_threshold = 0;
       shell_integration = "no-cursor";
 
-      selection_background = "#393939";
-      selection_foreground = "#f2f4f8";
-      url_color = "#33b1ff";
+      selection_background = "#be95ff";
+      selection_foreground = "#161616";
+
+      url_color = "#be95ff";
+
       cursor = "#be95ff";
       cursor_text_color = "#161616";
 
+      tab_bar_style = "powerline";
+      active_tab_background = "#be95ff";
+      active_tab_foreground = "#161616";
+      inactive_tab_background = "#262626";
+      inactive_tab_foreground = "#be95ff";
+
       # Black
       color0 = "#161616";
-      color8 = "#525252";
+      color8 = "#262626";
 
       # Red
       color1 = "#ee5396";
@@ -54,7 +62,7 @@
       color2 = "#25be6a";
       color10 = "#25be6a";
 
-      # Yellow (Oxocarbon usa tons mais terrosos/laranjas para amarelo)
+      # Yellow
       color3 = "#e8a27e";
       color11 = "#e8a27e";
 
