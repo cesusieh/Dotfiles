@@ -8,6 +8,7 @@
     # GUI programs
     google-chrome
     nautilus
+    wl-clipboard
 
     # CLI tools
     fastfetch
