@@ -21,6 +21,10 @@ in
       icon-theme = "Adwaita";
       cursor-theme = "Bibata-Modern-Classic";
     };
+
+    "org/gnome/desktop/wm/preferences" = {
+      button-layout = ":";
+    };
   };
 
   gtk = {
@@ -44,10 +48,12 @@ in
 
     gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
+      gtk-decoration-layout = ":";
     };
 
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
+      gtk-decoration-layout = ":";
     };
   };
 
