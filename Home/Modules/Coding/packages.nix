@@ -13,7 +13,9 @@
     python311
     pipx
 
-    docker
-    docker-compose
+    podman
+    podman-compose
+
+    pgadmin4-desktopmode
   ];
 }
