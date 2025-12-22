@@ -1,9 +1,19 @@
 { pkgs, ... }:
 
 {
-    home.packages = with pkgs; [
-      # LSP
-      nixd
-      nil
-    ];
+  home.packages = with pkgs; [
+    nixd
+    nil
+
+    nodejs_20
+    nodePackages.pnpm
+    nodePackages.typescript
+    nodePackages.typescript-language-server
+
+    python311
+    pipx
+
+    docker
+    docker-compose
+  ];
 }
