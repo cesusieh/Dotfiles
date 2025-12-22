@@ -13,7 +13,7 @@
       mainBar = {
         layer = "top";
         position = "top";
-        height = 30;
+        height = 42;
 
         modules-left = [
           "hyprland/workspaces"

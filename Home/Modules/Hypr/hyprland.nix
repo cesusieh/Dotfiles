@@ -131,6 +131,21 @@
         "$mainMod, up, movefocus, u"
         "$mainMod, down, movefocus, d"
 
+        "$mainMod SHIFT, left, movewindow, l"
+        "$mainMod SHIFT, right, movewindow, r"
+        "$mainMod SHIFT, up, movewindow, u"
+        "$mainMod SHIFT, down, movewindow, d"
+
+        "bind = $mainMod, h, movefocus, l"
+        "bind = $mainMod, l, movefocus, r"
+        "bind = $mainMod, k, movefocus, u"
+        "bind = $mainMod, j, movefocus, d"
+
+        "bind = $mainMod SHIFT, h, movewindow, l"
+        "bind = $mainMod SHIFT, l, movewindow, r"
+        "bind = $mainMod SHIFT, k, movewindow, u"
+        "bind = $mainMod SHIFT, j, movewindow, d"
+
         "$mainMod, 1, workspace, 1"
         "$mainMod, 2, workspace, 2"
         "$mainMod, 3, workspace, 3"
