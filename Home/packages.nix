@@ -5,13 +5,14 @@
     # GUI programs
     google-chrome
     nautilus
-    wl-clipboard
+    discord
 
     # CLI tools
     fastfetch
     btop
     eza
     bat
+    wl-clipboard
 
     # Hypr tools
     wofi
