@@ -22,6 +22,7 @@
         "hyprpaper"
         "hypridle"
         "systemctl --user start hyprpolkitagent"
+        "systemctl --user restart waybar"
       ];
 
       env = [

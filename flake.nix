@@ -4,13 +4,7 @@
 
     home-manager.url = "github:nix-community/home-manager/release-25.11";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-
-    my-shell = {
-      url = "path:./Home/Modules/AGS";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
-
   outputs =
     {
       self,
