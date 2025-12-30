@@ -1,8 +1,8 @@
-{ ... }:
+{ config, ... }:
 
 let
   colors = import ../theme/colors.nix;
-  wall = "~/Pictures/Wallpapers/b-633.jpg";
+  wall = "${config.xdg.userDirs.pictures}/Wallpapers/b-633.jpg";
 in
 {
   programs.hyprlock = {

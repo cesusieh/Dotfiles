@@ -12,14 +12,13 @@ in
     autosuggestion.enable = true;
 
     shellAliases = {
-      ls = "eza --icons";
+      ls = "eza --icons --group-directories-first";
       ll = "eza -l --icons --group-directories-first";
       la = "eza -la --icons --group-directories-first";
-      tree = "eza --tree --icons";
+      tree = "eza --tree --icons --group-directories-first";
       cat = "bat";
 
-      #atalhos nix
-      nix-update = "sudo nixos-rebuild switch --flake ~/Dotfiles/#Robson";
+      nix-update = "sudo nixos-rebuild switch --flake ~/Dotfiles#$(hostname)";
       nix-clean = "sudo nix-collect-garbage -d";
       conf = "zeditor ~/Dotfiles";
     };

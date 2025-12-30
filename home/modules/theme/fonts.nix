@@ -11,4 +11,11 @@
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
   ];
+
+  fonts.fontconfig.defaultFonts = {
+    monospace = [ "JetBrainsMono Nerd Font" ];
+    sansSerif = [ "Cantarell" ];
+    serif = [ "Cantarell" ];
+    emoji = [ "Noto Color Emoji" ];
+  };
 }

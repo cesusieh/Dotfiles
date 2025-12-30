@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   wayland.windowManager.hyprland.settings = {
@@ -8,16 +8,16 @@
       "$mainMod, W, exec, google-chrome-stable"
       "$mainMod, T, exec, kitty"
       "$mainMod, E, exec, nautilus"
-      "$mainMod, Return, exec, wofi --show drun"
+      "$mainMod, Return, exec, pkill wofi || wofi --show drun"
 
       "$mainMod, Q, killactive,"
       "$mainMod, F, fullscreen"
       "$mainMod, Escape, exec, loginctl lock-session"
 
-      "SHIFT, Print, exec, hyprshot -m region"
+      ", Print, exec, hyprshot -m region --freeze"
       "CTRL, Print, exec, hyprshot -m window"
       "ALT, Print, exec, hyprshot -m output"
-      "$mainMod, Print, exec, satty --filename \"$(ls -t ~/Pictures/Screenshots/*.png | head -n 1)\""
+      "$mainMod, Print, exec, satty --filename \"$(ls -t ${config.xdg.userDirs.pictures}/Screenshots/*.png | head -n 1)\""
 
       "$mainMod, left, movefocus, l"
       "$mainMod, right, movefocus, r"

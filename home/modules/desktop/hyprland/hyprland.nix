@@ -18,12 +18,8 @@
       ];
 
       exec-once = [
-        "systemctl --user restart waybar"
-        "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1"
-      ];
-
-      env = [
-
+        "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1" # Start gnome polkit
+        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP" # Sync wayland and DE vars with systemd/dbus for user services
       ];
 
       input = {
@@ -41,7 +37,8 @@
 
       windowrule = [
         "suppressevent maximize, class:.*"
-        "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+        "float, title:^(Picture-in-Picture)$"
+        "pin, title:^(Picture-in-Picture)$"
       ];
     };
   };

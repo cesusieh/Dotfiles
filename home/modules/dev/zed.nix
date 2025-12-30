@@ -27,6 +27,22 @@
         "cursor_shape" = "bar";
       };
 
+      "languages" = {
+        "Nix" = {
+          "language_servers" = [
+            # Force nixd
+            "nixd"
+            "!nil"
+          ];
+          "formatter" = {
+            "external" = {
+              "command" = "nixfmt";
+              "arguments" = [ "--stdin" ];
+            };
+          };
+        };
+      };
+
       "disable_ai" = true;
     };
   };

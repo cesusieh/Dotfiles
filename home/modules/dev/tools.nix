@@ -3,19 +3,18 @@
 {
   home.packages = with pkgs; [
     nixd
-    nil
+    nixfmt-rfc-style
 
-    nodejs_20
-    nodePackages.pnpm
-    nodePackages.typescript
+    nodejs_24
+    corepack_24
     nodePackages.typescript-language-server
 
     python311
-    pipx
+    uv
 
-    podman
     podman-compose
+    lazydocker
 
-    pgadmin4-desktopmode
+    dbeaver-bin
   ];
 }

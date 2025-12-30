@@ -16,8 +16,11 @@ let
   };
 
   iconTheme = {
-    name = "Adwaita";
-    package = pkgs.adwaita-icon-theme;
+    name = "MoreWaita";
+    package = pkgs.morewaita-icon-theme;
+
+    # name = "Adwaita";
+    # package = pkgs.adwaita-icon-theme;
   };
 in
 {
@@ -29,9 +32,14 @@ in
 
   gtk = {
     enable = true;
-    theme = gtkTheme;
-    iconTheme = iconTheme;
-
+    theme = {
+      name = gtkTheme.name;
+      package = gtkTheme.package;
+    };
+    iconTheme = {
+      name = iconTheme.name;
+      package = iconTheme.package;
+    };
     cursorTheme = {
       name = cursorTheme.name;
       package = cursorTheme.package;
@@ -49,12 +57,18 @@ in
     };
   };
 
+  qt = {
+    enable = true;
+    platformTheme.name = "gtk";
+    style.name = "adwaita-dark";
+  };
+
   home.pointerCursor = {
     gtk.enable = true;
     x11.enable = true;
     name = cursorTheme.name;
-    package = cursorTheme.package;
     size = cursorTheme.size;
+    package = cursorTheme.package;
   };
 
   dconf.settings = {

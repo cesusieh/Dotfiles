@@ -1,5 +1,8 @@
-{ ... }:
+{ config, ... }:
 
+let
+  wall1 = "${config.xdg.userDirs.pictures}/Wallpapers/gengar-rain.jpg";
+in
 {
   services.hyprpaper = {
     enable = true;
@@ -9,10 +12,10 @@
       splash = false;
       splash_offset = 2.0;
 
-      preload = [ "~/Pictures/Wallpapers/gengar-rain.jpg" ];
+      preload = [ "${wall1}" ];
       wallpaper = [
-        "DP-1,~/Pictures/Wallpapers/gengar-rain.jpg"
-        "HDMI-A-1,~/Pictures/Wallpapers/gengar-rain.jpg"
+        "DP-1, ${wall1}"
+        "HDMI-A-1, ${wall1}"
       ];
     };
   };
