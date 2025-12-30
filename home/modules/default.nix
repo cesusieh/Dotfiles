@@ -1,23 +1,25 @@
 {
   imports = [
-    ./coding/git.nix
-    ./coding/zed.nix
-    ./coding/packages.nix
+    ./core/git.nix
+    ./core/shell.nix
+    ./core/utils.nix
+    ./core/xdg.nix
 
-    ./gui/waybar.nix
-    ./gui/wofi.nix
+    ./desktop/hyprland/hypridle.nix
+    ./desktop/hyprland/settings.nix
+    ./desktop/hyprland/hyprlock.nix
+    ./desktop/hyprland/hyprpaper.nix
 
-    ./hypr/hypridle.nix
-    ./hypr/hyprland.nix
-    ./hypr/hyprlock.nix
-    ./hypr/hyprpaper.nix
+    ./desktop/waybar.nix
+    ./desktop/wofi.nix
 
-    ./terminal/kitty.nix
-    ./terminal/starship.nix
-    ./terminal/zsh.nix
+    ./dev/tools.nix
+    ./dev/zed.nix
+
+    ./programs/common.nix
+    ./programs/kitty.nix
 
     ./theme/fonts.nix
     ./theme/theme.nix
-    ./theme/directories.nix
   ];
 }

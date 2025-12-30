@@ -2,12 +2,6 @@
 
 {
   home.packages = with pkgs; [
-    # GUI programs
-    google-chrome
-    nautilus
-    discord
-
-    # CLI tools
     fastfetch
     btop
     eza
