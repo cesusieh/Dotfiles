@@ -2,7 +2,6 @@
   imports = [
     ./core/git.nix
     ./core/shell.nix
-    ./core/utils.nix
     ./core/xdg.nix
 
     ./desktop/hyprland/hyprland.nix
@@ -16,7 +15,8 @@
     ./dev/tools.nix
     ./dev/zed.nix
 
-    ./programs/common.nix
+    ./programs/utils.nix
+    ./programs/apps.nix
     ./programs/kitty.nix
 
     ./theme/fonts.nix

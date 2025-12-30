@@ -8,11 +8,8 @@
     bat
     wl-clipboard
 
-    # Hypr tools
-    wofi
     hyprshot
     satty
-    brightnessctl
     playerctl
     hyprpolkitagent
 
