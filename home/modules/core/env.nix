@@ -12,7 +12,7 @@
 
     HYPRSHOT_DIR = "/home/carlinhos/Pictures/Screenshots"; # Set Hyprshot dir
 
-    GTK_USE_PORTAL = "0"; # Forces GTK apps to use XDG Portals
+    GTK_USE_PORTAL = "1"; # Forces GTK apps to use XDG Portals
 
     QT_QPA_PLATFORMTHEME = "gtk3"; # Makes QT apps use GTK theme
     QT_WAYLAND_DISABLE_WINDOWDECORATION = "1"; # Disable QT windows decorations
