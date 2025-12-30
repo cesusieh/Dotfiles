@@ -19,7 +19,6 @@
 
       exec-once = [
         "${pkgs.polkit_gnome}/libexec/polkit-gnome-authentication-agent-1" # Start gnome polkit
-        "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP" # Sync wayland and DE vars with systemd/dbus for user services
       ];
 
       input = {

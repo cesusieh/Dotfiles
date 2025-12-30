@@ -8,6 +8,12 @@ in
     enable = true;
     enableCompletion = true;
 
+    loginExtra = ''
+      if [ -z "$DISPLAY" ] && [ "$(tty)" = "/dev/tty1" ]; then
+        exec Hyprland
+      fi
+    '';
+
     syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
 
@@ -20,7 +26,6 @@ in
 
       nix-update = "sudo nixos-rebuild switch --flake ~/Dotfiles#$(hostname)";
       nix-clean = "sudo nix-collect-garbage -d";
-      conf = "zeditor ~/Dotfiles";
     };
 
     oh-my-zsh = {

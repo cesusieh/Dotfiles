@@ -6,23 +6,20 @@
     xwayland.enable = true;
   };
 
-  # services.displayManager.sddm = {
+  # Session manager
+  # services.xserver.displayManager.gdm = {
   #   enable = true;
-  #   wayland.enable = true;
-  #   theme = "...";
+  #   wayland = true;
   # };
 
   xdg.portal = {
     enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+    extraPortals = [
+      pkgs.xdg-desktop-portal-gtk
+    ];
 
     config = {
-      common = {
-        default = [
-          "hyprland"
-          "gtk"
-        ];
-      };
+      common.default = "*";
     };
   };
 

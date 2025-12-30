@@ -56,7 +56,7 @@ in
       image = [
         {
           monitor = "";
-          path = "~/.face.icon";
+          path = "~/.face";
           size = 120;
           border_size = 2;
           border_color = "rgb(${colors.primary})";

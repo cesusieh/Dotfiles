@@ -5,7 +5,7 @@
     ./core/xdg.nix
     ./core/env.nix
 
-    ./desktop/hyprland/hyprland.nix
+    ./desktop/hyprland/settings.nix
     ./desktop/hypridle.nix
     ./desktop/hyprlock.nix
     ./desktop/hyprpaper.nix

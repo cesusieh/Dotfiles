@@ -16,18 +16,26 @@ let
   };
 
   iconTheme = {
-    name = "MoreWaita";
-    package = pkgs.morewaita-icon-theme;
+    name = "Adwaita";
+    package = pkgs.adwaita-icon-theme;
 
-    # name = "Adwaita";
-    # package = pkgs.adwaita-icon-theme;
+    # name = "Papirus";
+    # package = pkgs.papirus-icon-theme;
+
+    # name = "Colloid-Dark";
+    # package = pkgs.colloid-icon-theme.override {
+    #   schemeVariants = [ "default" ];
+    #   colorVariants = [ "default" ];
+    # };
   };
 in
 {
-  home.packages = [
+  home.packages = with pkgs; [
     gtkTheme.package
     cursorTheme.package
     iconTheme.package
+
+    hicolor-icon-theme # Fallback
   ];
 
   gtk = {
