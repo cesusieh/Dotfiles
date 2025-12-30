@@ -11,7 +11,7 @@
     hyprshot
     satty
     playerctl
-    hyprpolkitagent
+    polkit_gnome
     wlogout
 
     pamixer

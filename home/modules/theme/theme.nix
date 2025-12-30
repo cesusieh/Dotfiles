@@ -25,8 +25,6 @@ in
     gtkTheme.package
     cursorTheme.package
     iconTheme.package
-    pkgs.libsForQt5.qt5ct
-    pkgs.kdePackages.qt6ct
   ];
 
   gtk = {
@@ -49,12 +47,6 @@ in
       gtk-application-prefer-dark-theme = 1;
       gtk-decoration-layout = ":";
     };
-  };
-
-  qt = {
-    enable = true;
-    platformTheme.name = "gtk";
-    style.name = "adwaita-dark";
   };
 
   home.pointerCursor = {
