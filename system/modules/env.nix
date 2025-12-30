@@ -2,14 +2,10 @@
 
 {
   environment.sessionVariables = {
+    NIXOS_OZONE_WL = "1"; # Force Electron apps to use Wayland
+
+    # Set Wayland priority
     GDK_BACKEND = "wayland,x11,*";
-
     QT_QPA_PLATFORM = "wayland;xcb";
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = "1";
-    QT_QPA_PLATFORMTHEME = "gtk3";
-
-    WLR_NO_HARDWARE_CURSORS = "1";
-
-    NIXOS_OZONE_WL = "1";
   };
 }

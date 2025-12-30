@@ -23,20 +23,7 @@
       ];
 
       env = [
-        "HYPRCURSOR_THEME,Bibata-Modern-Classic"
-        "XCURSOR_THEME,Bibata-Modern-Classic"
 
-        "HYPRCURSOR_SIZE,24"
-        "XCURSOR_SIZE,24"
-
-        "HYPRSHOT_DIR,/home/carlinhos/Pictures/Screenshots"
-
-        "GTK_USE_PORTAL,1"
-        "GDK_BACKEND,wayland,x11,*"
-        "QT_QPA_PLATFORM,wayland"
-        # "QT_QPA_PLATFORMTHEME,gtk3"
-        "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
-        "QT_AUTO_SCREEN_SCALE_FACTOR,1"
       ];
 
       input = {
