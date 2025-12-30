@@ -6,7 +6,7 @@ let
   background_input = "rgba(22, 22, 22, 0.8)";
   error_color = "rgb(ee5396)";
 
-  wall = "~/Imagens/Wallpapers/blossom.jpeg";
+  wall = "~/Pictures/Wallpapers/blossom.jpeg";
 in
 {
   programs.hyprlock = {

@@ -9,10 +9,10 @@
       splash = false;
       splash_offset = 2.0;
 
-      preload = [ "~/Imagens/Wallpapers/anime-style-character-space.jpg" ];
+      preload = [ "~/Pictures/Wallpapers/anime-style-character-space.jpg" ];
       wallpaper = [
-        "DP-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
-        "HDMI-A-1,~/Imagens/Wallpapers/anime-style-character-space.jpg"
+        "DP-1,~/Pictures/Wallpapers/anime-style-character-space.jpg"
+        "HDMI-A-1,~/Pictures/Wallpapers/anime-style-character-space.jpg"
       ];
     };
   };

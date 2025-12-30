@@ -33,7 +33,7 @@
         "QT_QPA_PLATFORM,wayland"
         "GDK_BACKEND,wayland,x11,*"
         "GTK_USE_PORTAL,1"
-        "HYPRSHOT_DIR,/home/carlinhos/Imagens/Screenshots"
+        "HYPRSHOT_DIR,/home/carlinhos/Pictures/Screenshots"
 
         "QT_QPA_PLATFORMTHEME,gtk3"
         "QT_WAYLAND_DISABLE_WINDOWDECORATION,1"
@@ -124,7 +124,7 @@
         "SHIFT, Print, exec, hyprshot -m region"
         "CTRL, Print, exec, hyprshot -m window"
         "ALT, Print, exec, hyprshot -m output"
-        "$mainMod, Print, exec, satty --filename \"$(ls -t ~/Imagens/Screenshots/*.png | head -n 1)\""
+        "$mainMod, Print, exec, satty --filename \"$(ls -t ~/Pictures/Screenshots/*.png | head -n 1)\""
 
         "$mainMod, left, movefocus, l"
         "$mainMod, right, movefocus, r"
