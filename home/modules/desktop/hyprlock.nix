@@ -1,12 +1,8 @@
 { ... }:
 
 let
-  accent = "rgb(be95ff)";
-  text = "rgb(f2f4f8)";
-  background_input = "rgba(22, 22, 22, 0.8)";
-  error_color = "rgb(ee5396)";
-
-  wall = "~/Pictures/Wallpapers/blossom.jpeg";
+  colors = import ../theme/colors.nix;
+  wall = "~/Pictures/Wallpapers/b-633.jpg";
 in
 {
   programs.hyprlock = {
@@ -30,7 +26,7 @@ in
           brightness = 0.8172;
           vibrancy = 0.1696;
           vibrancy_darkness = 0.0;
-          color = "rgb(161616)";
+          color = "rgb(${colors.background})";
         }
       ];
 
@@ -38,7 +34,7 @@ in
         {
           monitor = "";
           text = ''cmd[update:1000] echo "$(date +"%H:%M")"'';
-          color = text;
+          color = "rgb(${colors.foreground})";
           font_size = 75;
           font_family = "Cantarell ExtraBold";
           position = "0, 100";
@@ -48,7 +44,7 @@ in
         {
           monitor = "";
           text = ''cmd[update:1000] echo "$(date +"%A, %d de %B")"'';
-          color = text;
+          color = "rgb(${colors.foreground})";
           font_size = 20;
           font_family = "Cantarell Regular";
           position = "0, 10";
@@ -63,7 +59,7 @@ in
           path = "~/.face.icon";
           size = 120;
           border_size = 2;
-          border_color = accent;
+          border_color = "rgb(${colors.primary})";
           position = "0, -80";
           halign = "center";
           valign = "center";
@@ -81,14 +77,17 @@ in
           dots_rounding = -1;
 
           outer_color = "rgba(0, 0, 0, 0)";
-          inner_color = background_input;
-          font_color = text;
+
+          inner_color = "rgba(${colors.background}cc)";
+
+          font_color = "rgb(${colors.foreground})";
           fade_on_empty = true;
 
           placeholder_text = "<i>Senha...</i>";
           rounding = 12;
-          check_color = accent;
-          fail_color = error_color;
+
+          check_color = "rgb(${colors.primary})";
+          fail_color = "rgb(${colors.alert})";
 
           position = "0, -180";
           halign = "center";

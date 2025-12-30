@@ -1,25 +1,31 @@
 { config, ... }:
 
+let
+  colors = import ../theme/colors.nix;
+in
 {
   programs.zsh = {
     enable = true;
     enableCompletion = true;
 
+    syntaxHighlighting.enable = true;
     autosuggestion.enable = true;
-    syntaxHighlighting.enable = false;
 
     shellAliases = {
       ls = "eza --icons";
+      ll = "eza -l --icons --group-directories-first";
+      la = "eza -la --icons --group-directories-first";
       tree = "eza --tree --icons";
       cat = "bat";
 
+      #atalhos nix
       nix-update = "sudo nixos-rebuild switch --flake ~/Dotfiles/#Robson";
-      nix-dots = "zeditor ~/Dotfiles";
+      nix-clean = "sudo nix-collect-garbage -d";
+      conf = "zeditor ~/Dotfiles";
     };
 
     oh-my-zsh = {
       enable = true;
-      theme = "robbyrussell";
       plugins = [
         "git"
         "sudo"
@@ -30,19 +36,21 @@
     history = {
       size = 10000;
       path = "${config.xdg.dataHome}/zsh/history";
+      ignoreDups = true;
     };
   };
 
   programs.starship = {
     enable = true;
+    enableZshIntegration = true;
 
     settings = {
-      format = "$directory $container $python $git_branch $git_status$line_break$character";
+      format = "$directory$container$python$git_branch$git_status$line_break$character";
 
       hostname = {
         ssh_only = false;
         format = "[$hostname]($style)";
-        style = "bold #33b1ff";
+        style = "bold #${colors.secondary}";
       };
 
       directory = {
@@ -50,43 +58,43 @@
         truncation_length = 3;
         truncate_to_repo = false;
         format = "[$path]($style) ";
-        style = "bold #be95ff";
+        style = "bold #${colors.primary}";
       };
 
       container = {
         format = "[ $name]($style)";
-        style = "bold #3ddbd9";
+        style = "bold #${colors.cyan}";
       };
 
       python = {
         format = "[$symbol$virtualenv]($style) ";
         symbol = "󰌠 ";
-        style = "bold #e8a27e";
+        style = "bold #${colors.yellow}";
         detect_extensions = [ "py" ];
       };
 
       git_branch = {
         format = " [$branch]($style) ";
-        style = "bold #25be6a";
+        style = "bold #${colors.green}";
       };
 
       git_status = {
         ahead = "⇡$count";
         behind = "⇣$count";
         diverged = "⇕";
-        staged = "[+$count](bold #25be6a)";
-        stashed = "[↵](#525252)";
-        modified = "[!$count](bold #e8a27e)";
-        untracked = "[?](#ee5396)";
-        renamed = "[»](#3ddbd9)";
-        deleted = "[✘](bold #ee5396)";
-        style = "bold #e8a27e";
+        staged = "[+$count](bold #${colors.green})";
+        stashed = "[↵](#${colors.disabled})";
+        modified = "[!$count](bold #${colors.yellow})";
+        untracked = "[?](#${colors.alert})";
+        renamed = "[»](#${colors.cyan})";
+        deleted = "[✘](bold #${colors.alert})";
+        style = "bold #${colors.yellow}";
         format = "[$all_status$ahead_behind]($style)";
       };
 
       character = {
-        success_symbol = "[~](bold #be95ff)";
-        error_symbol = "[~](bold #ee5396)";
+        success_symbol = "[󱄅](bold #${colors.primary})";
+        error_symbol = "[󱄅](bold #${colors.alert})";
       };
     };
   };

@@ -3,17 +3,13 @@
 {
   programs.zed-editor = {
     enable = true;
-    extensions = [
-      "Oxocarbon (IBM Theme) Theme"
-      "Bearded Icon Theme"
-      "Nix"
-      "HTML"
-      "React TypeScript Snippets"
-      "Python Snippets"
-      "Dockerfile"
-      "Prisma"
-      "SCSS"
-    ];
+
+    # Not working...
+    # extensions = [
+    #   "Oxocarbon (IBM Theme) Theme"
+    #   "Bearded Icon Theme"
+    #   "Nix"
+    # ];
 
     userSettings = {
       "buffer_font_family" = "JetBrainsMono Nerd Font";

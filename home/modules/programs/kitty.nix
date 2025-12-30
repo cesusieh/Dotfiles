@@ -1,5 +1,8 @@
 { ... }:
 
+let
+  colors = import ../theme/colors.nix;
+in
 {
   programs.kitty = {
     enable = true;
@@ -15,8 +18,8 @@
       bold_italic_font = "auto";
       disable_ligatures = "never";
 
-      background = "#161616";
-      foreground = "#f2f4f8";
+      background = "#${colors.background}";
+      foreground = "#${colors.foreground}";
 
       background_opacity = 1;
       background_blur = 1;
@@ -36,51 +39,51 @@
       cursor_trail_start_threshold = 0;
       shell_integration = "no-cursor";
 
-      selection_background = "#be95ff";
-      selection_foreground = "#161616";
+      selection_background = "#${colors.primary}";
+      selection_foreground = "#${colors.background}";
 
-      url_color = "#be95ff";
+      url_color = "#${colors.primary}";
 
-      cursor = "#be95ff";
-      cursor_text_color = "#161616";
+      cursor = "#${colors.primary}";
+      cursor_text_color = "#${colors.background}";
 
       tab_bar_style = "powerline";
-      active_tab_background = "#be95ff";
-      active_tab_foreground = "#161616";
-      inactive_tab_background = "#262626";
-      inactive_tab_foreground = "#be95ff";
+      active_tab_background = "#${colors.primary}";
+      active_tab_foreground = "#${colors.background}";
+      inactive_tab_background = "#${colors.background_alt}";
+      inactive_tab_foreground = "#${colors.primary}";
 
       # Black
-      color0 = "#161616";
-      color8 = "#262626";
+      color0 = "#${colors.black}";
+      color8 = "#${colors.black_bright}";
 
       # Red
-      color1 = "#ee5396";
-      color9 = "#ee5396";
+      color1 = "#${colors.red}";
+      color9 = "#${colors.red}";
 
       # Green
-      color2 = "#25be6a";
-      color10 = "#25be6a";
+      color2 = "#${colors.green}";
+      color10 = "#${colors.green}";
 
       # Yellow
-      color3 = "#e8a27e";
-      color11 = "#e8a27e";
+      color3 = "#${colors.yellow}";
+      color11 = "#${colors.yellow}";
 
       # Blue
-      color4 = "#33b1ff";
-      color12 = "#33b1ff";
+      color4 = "#${colors.blue}";
+      color12 = "#${colors.blue}";
 
       # Magenta
-      color5 = "#be95ff";
-      color13 = "#be95ff";
+      color5 = "#${colors.magenta}";
+      color13 = "#${colors.magenta}";
 
       # Cyan
-      color6 = "#3ddbd9";
-      color14 = "#3ddbd9";
+      color6 = "#${colors.cyan}";
+      color14 = "#${colors.cyan}";
 
       # White
-      color7 = "#f2f4f8";
-      color15 = "#ffffff";
+      color7 = "#${colors.white}";
+      color15 = "#${colors.white_bright}";
     };
   };
 }

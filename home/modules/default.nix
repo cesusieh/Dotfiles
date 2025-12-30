@@ -5,10 +5,10 @@
     ./core/utils.nix
     ./core/xdg.nix
 
-    ./desktop/hyprland/hypridle.nix
-    ./desktop/hyprland/settings.nix
-    ./desktop/hyprland/hyprlock.nix
-    ./desktop/hyprland/hyprpaper.nix
+    ./desktop/hyprland/hyprland.nix
+    ./desktop/hypridle.nix
+    ./desktop/hyprlock.nix
+    ./desktop/hyprpaper.nix
 
     ./desktop/waybar.nix
     ./desktop/wofi.nix
