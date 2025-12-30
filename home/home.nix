@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./Modules
+    ./modules
     ./packages.nix
   ];
 

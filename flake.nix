@@ -18,13 +18,13 @@
           system = "x86_64-linux";
           specialArgs = { inherit inputs; };
           modules = [
-            ./System/configuration.nix
+            ./system/configuration.nix
             home-manager.nixosModules.home-manager
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
               home-manager.backupFileExtension = "bckp";
-              home-manager.users.carlinhos = import ./Home/home.nix;
+              home-manager.users.carlinhos = import ./home/home.nix;
               home-manager.extraSpecialArgs = { inherit inputs; };
             }
           ];
