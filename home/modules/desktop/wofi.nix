@@ -1,5 +1,8 @@
 { ... }:
 
+let
+  colors = import ../theme/colors.nix;
+in
 {
   programs.wofi = {
     enable = true;
@@ -21,64 +24,68 @@
       close_on_focus_loss = true;
     };
 
-    # Tradução do seu arquivo 'style.css'
     style = ''
+      * {
+        font-family: "JetBrainsMono Nerd Font", monospace;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
       window {
-          background-color: rgba(30, 30, 30, 0.95);
-          color: #dedede;
-          border-radius: 16px;
-          border: 2px solid #353535;
-          font-family: "JetBrainsMono Nerd Font", monospace;
-          font-size: 14px;
+        margin: 0px;
+        background-color: #${colors.background};
+        color: #${colors.foreground};
+        border-radius: 16px;
+        border: 2px solid #${colors.disabled};
       }
 
       #input {
-          background-color: #1e1e1e;
-          color: #ffffff;
-          border: 2px solid #3584e4;
-          border-radius: 12px;
-          margin: 15px;
-          padding: 8px 12px;
-          box-shadow: none;
+        background-color: #${colors.background_alt};
+        color: #${colors.foreground};
+        border: 2px solid #${colors.background_alt};
+        border-radius: 12px;
+        margin: 15px;
+        padding: 8px 12px;
+        box-shadow: none;
       }
 
       #input:focus {
-          box-shadow: 0 0 0 2px rgba(53, 132, 228, 0.4);
+        border: 2px solid #${colors.secondary};
+        box-shadow: none;
       }
 
       #inner-box {
-          margin: 0px 10px 10px 10px;
-          background-color: transparent;
+        margin: 0px 10px 10px 10px;
+        background-color: transparent;
       }
 
       #scroll {
-          margin: 0px;
-          border: none;
+        margin: 0px;
+        border: none;
       }
 
       #text {
-          margin: 5px;
-          border: none;
-          color: #dedede;
+        margin: 5px;
+        border: none;
+        color: #${colors.foreground};
       }
 
       #entry {
-          padding: 10px;
-          margin: 2px 5px;
-          border-radius: 8px;
-          background-color: transparent;
+        padding: 10px;
+        margin: 2px 5px;
+        border-radius: 8px;
+        background-color: transparent;
       }
 
       #entry:selected {
-          background-color: #3584e4;
-          color: #ffffff;
-          font-weight: bold;
-          outline: none;
+        background-color: #${colors.background_alt};
+        color: #${colors.background};
+        outline: none;
       }
 
       #img {
-          margin-right: 12px;
-          background-color: transparent;
+        margin-right: 12px;
+        background-color: transparent;
       }
     '';
   };

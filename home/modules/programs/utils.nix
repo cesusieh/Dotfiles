@@ -12,12 +12,11 @@
     satty
     playerctl
     hyprpolkitagent
+    wlogout
 
-    # Audio
     pamixer
     pavucontrol
 
-    # Compressed files
     file-roller
     unzip
     p7zip
