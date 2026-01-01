@@ -5,5 +5,6 @@
     google-chrome
     nautilus
     vesktop
+    bitwarden-desktop
   ];
 }
