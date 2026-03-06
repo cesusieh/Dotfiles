@@ -9,9 +9,7 @@
     ./desktop/hypridle.nix
     ./desktop/hyprlock.nix
     ./desktop/hyprpaper.nix
-
     ./desktop/waybar.nix
-    ./desktop/wofi.nix
 
     ./dev/tools.nix
     ./dev/zed.nix

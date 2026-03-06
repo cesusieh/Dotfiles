@@ -13,6 +13,7 @@
     playerctl
     polkit_gnome
     wlogout
+    hyprlauncher
 
     pamixer
     pavucontrol

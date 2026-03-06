@@ -8,7 +8,7 @@
       "$mainMod, W, exec, google-chrome-stable"
       "$mainMod, T, exec, kitty"
       "$mainMod, E, exec, nautilus"
-      "$mainMod, Return, exec, pkill wofi || wofi --show drun"
+      "$mainMod, Return, exec, hyprlauncher"
 
       "$mainMod, Q, killactive,"
       "$mainMod, F, fullscreen"

@@ -19,7 +19,7 @@
       "theme" = {
         "mode" = "dark";
         "light" = "One Light";
-        "dark" = "Oxocarbon Dark (Variation I)";
+        "dark" = "Oxocarbon Dark (Variant I)";
       };
 
       "terminal" = {
