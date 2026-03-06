@@ -8,7 +8,7 @@
   # networking.firewall.allowedTCPPorts = [ 80 443 ];
 
   # Storage
-  fileSystems."/home/carlinhos/HD" = {
+  fileSystems."/home/carlinhos/Games/HD" = {
     device = "/dev/disk/by-uuid/7a7a9259-f52c-4f3e-bc6f-e1b40f25e21e";
     fsType = "ext4";
     options = [

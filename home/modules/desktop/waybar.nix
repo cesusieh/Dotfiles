@@ -17,6 +17,7 @@ in
         position = "top";
         height = 36;
         spacing = 4;
+        output = [ "DP-1" ];
 
         modules-left = [
           "hyprland/workspaces"
@@ -42,7 +43,7 @@ in
         };
 
         "hyprland/workspaces" = {
-          all-outputs = true;
+          all-outputs = false;
           format = "{icon}";
           format-icons = {
             "1" = "1";
