@@ -5,7 +5,7 @@
     "$mainMod" = "SUPER";
 
     bind = [
-      "$mainMod, W, exec, google-chrome-stable"
+      "$mainMod, W, exec, zen"
       "$mainMod, T, exec, kitty"
       "$mainMod, E, exec, nautilus"
       "$mainMod, Return, exec, hyprlauncher"

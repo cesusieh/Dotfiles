@@ -7,6 +7,7 @@
     eza
     bat
     wl-clipboard
+    killall
 
     hyprshot
     satty

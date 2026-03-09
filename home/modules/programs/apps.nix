@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   home.packages = with pkgs; [
-    google-chrome
+    inputs.zen-browser.packages."${pkgs.system}".default
     nautilus
     discord
     bitwarden-desktop
